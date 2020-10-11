@@ -1,6 +1,6 @@
 Title: Firefox 3 World Record
 Date: 2008-07-06 20:47:14 
-Category:  Archive
+Category: Archive
 Tags: Firefox
 
 Just wanted to make a quick post saying congrats to the Mozilla team for successfully hitting the world record for the 

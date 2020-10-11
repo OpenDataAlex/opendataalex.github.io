@@ -1,6 +1,6 @@
 Title: Fighting IE CSS Bugs
 Date: 2008-05-10 15:05:29
-Category:  Archive
+Category: Archive
 Tags: front end
 
 Well, it's been another busy week.  I just spent the last hour fighting with Internet Explorer.  Fortunately we're back 

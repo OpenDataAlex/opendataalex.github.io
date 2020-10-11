@@ -1,6 +1,6 @@
 Title: When Adding Plugins To Your Symfony Project
 Date: 2008-09-16 20:09:26
-Category:  Archive
+Category: Archive
 Tags: symfony, WebDev
 
 Had the roughest time getting this one going - so therefore I'm posting just in case anyone else gets stuck.

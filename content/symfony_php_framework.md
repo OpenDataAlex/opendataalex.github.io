@@ -1,6 +1,6 @@
 Title: Symfony PHP Framework
 Date: 2008-08-05 20:09:49
-Category:  Archive
+Category: Archive
 Tags: Symfony, WebDev
 
 So I've spent the better part of a week and a half/two weeks working on getting up to speed on Symfony, the PHP 

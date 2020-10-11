@@ -1,6 +1,6 @@
 Title: MySQL Case
 Date:  2009-04-11 10:35:23
-Category:  Archive
+Category: Archive
 Tags: MySQL
 
 I was in the midst of developing a system to track OTIF (On Time In Full)  deliveries to my employer's customers.  I 

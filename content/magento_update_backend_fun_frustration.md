@@ -1,6 +1,6 @@
 Title: Magento Update:  Backend Fun/Frustration
 Date: 2008-08-24 08:48:49
-Category:  Archive
+Category: Archive
 Tags: Magento
 
 Seeing that there's been interest with Magento, I figured I would write up my experiences since the last time I 

@@ -1,6 +1,6 @@
 Title: Hacking My Windows Mobile PDA
 Date:  2008-04-22 22:01:43
-Category:  Archive
+Category: Archive
 Tags: tutorial
 
 Well, the past weekend was fun - spent a good chuck of time hacking my PDA to have a better touch-based interface.  
