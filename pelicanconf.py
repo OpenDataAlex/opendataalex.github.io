@@ -45,3 +45,7 @@ DISPLAY_CATEGORIES_ON_MENU = True
 DISPLAY_TAGS_ON_MENU = True
 
 CC_LICENSE = 'CC-BY-SA-ND-NC'
+
+PLUGINS = [
+    'minchin.pelican.plugins.cname'
+]
