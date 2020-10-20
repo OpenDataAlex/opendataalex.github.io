@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OpenDataAlex's Blog - Open Source</title><link href="www.opendataalex.com/" rel="alternate"></link><link href="www.opendataalex.com/feeds/open-source.atom.xml" rel="self"></link><id>www.opendataalex.com/</id><updated>2018-10-28T18:23:00-04:00</updated><entry><title>A Sad Day For Open Source</title><link href="www.opendataalex.com/a-sad-day-for-open-source.html" rel="alternate"></link><published>2018-10-28T18:23:00-04:00</published><updated>2018-10-28T18:23:00-04:00</updated><author><name>Alex Meadows</name></author><id>tag:None,2018-10-28:www.opendataalex.com/a-sad-day-for-open-source.html</id><summary type="html">&lt;p&gt;Today is a sad day for open source.  I found out only a couple of hours ago that Red Hat, like
+many other open source companies before it, decided to sell itself to a group that will likely
+do what Oracle did to Sun Microsystems.  It's a damn shame.  The …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today is a sad day for open source.  I found out only a couple of hours ago that Red Hat, like
+many other open source companies before it, decided to sell itself to a group that will likely
+do what Oracle did to Sun Microsystems.  It's a damn shame.  The only way this will work is if
+IBM is smart enough to leave Red Hat as is and just utilize it for integration.&lt;/p&gt;
+&lt;p&gt;I imagine all my friends over there must be all kinds of livid/concerned.  Chin up and hope for
+the best while preparing for the worst.&lt;/p&gt;</content><category term="Open Source"></category></entry></feed>

@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Alex Meadows" />
+        <meta name="keywords" content="Symfony,WebDev" />
+        <meta name="description" content="So I&#39;ve spent the better part of a week and a half/two weeks working on getting up to speed on Symfony, the PHP framework I finally settled down to using. If you haven&#39;t heard about it, I strongly suggest you check it out. It&#39;s a very user-friendly framework, with …" />
+
+
+    <title>Symfony PHP Framework - OpenDataAlex's Blog</title>
+
+        <link rel="stylesheet" href="www.opendataalex.com/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="www.opendataalex.com/theme/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="www.opendataalex.com/theme/css/pygments/native.css" rel="stylesheet" />
+
+    <link href="www.opendataalex.com/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+        <link href="www.opendataalex.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="OpenDataAlex's Blog ATOM Feed" />
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="www.opendataalex.com" title="OpenDataAlex's Blog" class="collapsed">
+            <span class="fas fa-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="www.opendataalex.com/archives.html" title="Recent Articles" class="collapsed">
+            <span class="fas fa-th-list"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li id="share-small">
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
+                        <i class="fas fa-share-alt padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=www.opendataalex.com/symfony-php-framework.html" title="Share via Facebook" target="popup">
+                            <i class="fas fa-facebook-square padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=www.opendataalex.com/symfony-php-framework.html" title="Share via Google+" target="popup">
+                            <i class="fas fa-google-plus padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
+                            <i class="fas fa-twitter-square padding-small"></i>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fas fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexmeadows/" title="LinkedIn"><i class="fab fa-linkedin-square padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.slideshare.net/dba_alex" title="SllideShare"><i class="fab fa-sllideshare-square padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/OpenDataAlex" title="Twitter"><i class="fab fa-twitter-square padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fas fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="www.opendataalex.com/">
+                            <span class="fas fa-home padding-small"></span>
+                            OpenDataAlex's Blog
+                    </a>
+                </li>
+                    <li>
+                        <a href="www.opendataalex.com/archives.html">
+                            <span class="fas fa-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                <li class="nav-divider"></li>
+                <li id="share">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
+                        <i class="fas fa-share-alt padding-small"></i>
+                        Share
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=www.opendataalex.com/symfony-php-framework.html" target="popup">
+                            <i class="fab fa-facebook-square padding-small"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=www.opendataalex.com/symfony-php-framework.html" target="popup">
+                            <i class="fab fa-google-plus-square padding-small"></i>
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fas fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexmeadows/" title="LinkedIn">
+                            <i class="fab fa-linkedin-square padding-small"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.slideshare.net/dba_alex" title="SllideShare">
+                            <i class="fab fa-sllideshare-square padding-small"></i>
+                            SllideShare
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/OpenDataAlex" title="Twitter">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="www.opendataalex.com/pages/about.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.opendataalex.com/pages/presentations.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            Presentations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.opendataalex.com/pages/open-source-projects.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            Open Source Projects
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li class="active">
+                        <a href="www.opendataalex.com/category/archive.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Archive
+                            <span class="badge badge-secondary float-right categorybadge">12</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/data-visualization.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Data Visualization
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/open-source.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Open Source
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/tutorials.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Tutorials
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/updates.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Updates
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tags">
+                        <i class="fas fa-tags padding-small"></i>
+                        Tags
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-tags" class="sidebar_submenu collapse ">
+                </ul></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">
+            <span id="right-arrow" class="fas fa-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="fas fa-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="www.opendataalex.com/symfony-php-framework.html"
+                           rel="bookmark"
+                           title="Permalink to Symfony PHP Framework">
+                            Symfony PHP Framework
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2008-08-05T20:09:49-04:00"> Tue 05 August 2008</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="www.opendataalex.com/category/archive.html">Archive</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="www.opendataalex.com/tag/symfony.html">Symfony</a> /                 <a href="www.opendataalex.com/tag/webdev.html">WebDev</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <p>So I've spent the better part of a week and a half/two weeks working on getting up to speed on Symfony, the PHP 
+framework I finally settled down to using.  If you haven't heard about it, I strongly suggest you check it out.  It's a 
+very user-friendly framework, with the ability to build on the base code and extremely easy to get into.</p>
+<p><a href="http://symfony-project.com">Symfony Project</a></p>
+<p>There is some excellent documentation to read - including an open sourced copy of the printed manual, which is updated 
+with the latest and greatest data about each version (currently running at 1.0, 1.1, and 1.2).</p>
+<p>I decided to start running through the Askeet tutorial - which is currently just for version 1.0, but stubborn as I am, 
+I've been working with the latest version of 1.1, with the intent of moving to 1.2 when it becomes fully stable.  If you
+are up to the challenge yourself, feel free to drop a line if you have any questions, or check out the <a href="http://www.symfony-project.org/forum/">community forums</a>
+- you'll see me up there, mainly in the Askeet forum atm (DBA_Alex, just fyi =p ).</p>
+<p>I have gotten up to day 11, which is where I'll be picking back up tomorrow.  I'm truly looking forward to when the 
+project team finally updates the askeet tutorial for the other symfony versions.</p>
+<p>Anywho, tonight I'm getting back to work on updating the blog's design to match the rest of the site - something I hope 
+to complete before the week is out.  Once I finish that, I'll be pushing out a few tutorials that I've held onto which 
+I've been polishing up - one on Pentaho report creation, and another on using the php sparkline program.</p>
+                </div>
+                <footer class="text-right">
+                    <p>- Alex Meadows</p>
+                </footer>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                      <a rel="license" href="http://creativecommons.org/licenses/by-sa-nd-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa-nd-nc/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa-nd-nc/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="www.opendataalex.com/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="www.opendataalex.com/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="www.opendataalex.com/theme/js/pelican_twitchy.min.js"></script>
+
+</body>
+</html>

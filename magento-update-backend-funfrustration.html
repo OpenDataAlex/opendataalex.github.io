@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Alex Meadows" />
+        <meta name="keywords" content="Magento" />
+        <meta name="description" content="Seeing that there&#39;s been interest with Magento, I figured I would write up my experiences since the last time I published about it. First off, Magento does a fairly good job about documenting the basics about the program. As I found out last time, it will take a bit of …" />
+
+
+    <title>Magento Update: Backend Fun/Frustration - OpenDataAlex's Blog</title>
+
+        <link rel="stylesheet" href="www.opendataalex.com/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="www.opendataalex.com/theme/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="www.opendataalex.com/theme/css/pygments/native.css" rel="stylesheet" />
+
+    <link href="www.opendataalex.com/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+        <link href="www.opendataalex.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="OpenDataAlex's Blog ATOM Feed" />
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="www.opendataalex.com" title="OpenDataAlex's Blog" class="collapsed">
+            <span class="fas fa-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="www.opendataalex.com/archives.html" title="Recent Articles" class="collapsed">
+            <span class="fas fa-th-list"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li id="share-small">
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
+                        <i class="fas fa-share-alt padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=www.opendataalex.com/magento-update-backend-funfrustration.html" title="Share via Facebook" target="popup">
+                            <i class="fas fa-facebook-square padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=www.opendataalex.com/magento-update-backend-funfrustration.html" title="Share via Google+" target="popup">
+                            <i class="fas fa-google-plus padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
+                            <i class="fas fa-twitter-square padding-small"></i>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fas fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexmeadows/" title="LinkedIn"><i class="fab fa-linkedin-square padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.slideshare.net/dba_alex" title="SllideShare"><i class="fab fa-sllideshare-square padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/OpenDataAlex" title="Twitter"><i class="fab fa-twitter-square padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fas fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="www.opendataalex.com/">
+                            <span class="fas fa-home padding-small"></span>
+                            OpenDataAlex's Blog
+                    </a>
+                </li>
+                    <li>
+                        <a href="www.opendataalex.com/archives.html">
+                            <span class="fas fa-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                <li class="nav-divider"></li>
+                <li id="share">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
+                        <i class="fas fa-share-alt padding-small"></i>
+                        Share
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=www.opendataalex.com/magento-update-backend-funfrustration.html" target="popup">
+                            <i class="fab fa-facebook-square padding-small"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=www.opendataalex.com/magento-update-backend-funfrustration.html" target="popup">
+                            <i class="fab fa-google-plus-square padding-small"></i>
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fas fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexmeadows/" title="LinkedIn">
+                            <i class="fab fa-linkedin-square padding-small"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.slideshare.net/dba_alex" title="SllideShare">
+                            <i class="fab fa-sllideshare-square padding-small"></i>
+                            SllideShare
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/OpenDataAlex" title="Twitter">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="www.opendataalex.com/pages/about.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.opendataalex.com/pages/presentations.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            Presentations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.opendataalex.com/pages/open-source-projects.html">
+                            <i class="fas fa-file-alt padding-small"></i>
+                            Open Source Projects
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li class="active">
+                        <a href="www.opendataalex.com/category/archive.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Archive
+                            <span class="badge badge-secondary float-right categorybadge">12</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/data-visualization.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Data Visualization
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/open-source.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Open Source
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/tutorials.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Tutorials
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="www.opendataalex.com/category/updates.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            Updates
+                            <span class="badge badge-secondary float-right categorybadge">1</span>
+                        </a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tags">
+                        <i class="fas fa-tags padding-small"></i>
+                        Tags
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-tags" class="sidebar_submenu collapse ">
+                </ul></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">
+            <span id="right-arrow" class="fas fa-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="fas fa-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="www.opendataalex.com/magento-update-backend-funfrustration.html"
+                           rel="bookmark"
+                           title="Permalink to Magento Update: Backend Fun/Frustration">
+                            Magento Update:  Backend Fun/Frustration
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2008-08-24T08:48:49-04:00"> Sun 24 August 2008</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="www.opendataalex.com/category/archive.html">Archive</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="www.opendataalex.com/tag/magento.html">Magento</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <p>Seeing that there's been interest with Magento, I figured I would write up my experiences since the last time I 
+published about it.</p>
+<p>First off, Magento does a fairly good job about documenting the basics about the program.  As I found out last time, it
+will take a bit of digging to get into super-specific problems - mine just happened to be a host issue that had to be 
+worked around. </p>
+<p>So basically, to access the administration side of the system, you need to go to the root directory of where you placed 
+Magento and add /admin to the end of the address.  In my case, I actually created a store folder to keep it separate 
+from the rest of the website so the address would look similar to:  http://somesite.com/store/admin.</p>
+<p>Now during the installation process, you created an administrator account.  Using that will get you access to the 
+backend - which happens to be a nice sales dashboard (one of the features that really sold me on Magento is the 
+reporting capabilities build in, not sure if other OSS e-commerce solutions do something similar.  Feel free to post a 
+comment and let me know what's up with the other solutions.  Heck, if you have a good review of any of them, send it to 
+me too =p).</p>
+<p>One of my big quips about Magento at this point is that even with my broadband connection, Magento seems to take it's 
+time loading initially, which I sincerely hope they work on in future releases.  Also at first brush, it seems a bit 
+complex to build addon modules for Magento, which I have also seen comments about elsewhere when reading reviews about 
+php|architect\'s Magento guide.</p>
+<p>I do like how the menu is organized, with the ability to create promotions for a particular date range, newsletter 
+creation, and the ability to create personalized themes for stores (haven't worked on creating one yet, but I do like 
+that they give the option).</p>
+<p>Anywho, I'll keep playing around with Magento (when I'm not delving into symfony =p) and see what else I can come up 
+with.</p>
+                </div>
+                <footer class="text-right">
+                    <p>- Alex Meadows</p>
+                </footer>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                      <a rel="license" href="http://creativecommons.org/licenses/by-sa-nd-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa-nd-nc/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa-nd-nc/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="www.opendataalex.com/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="www.opendataalex.com/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="www.opendataalex.com/theme/js/pelican_twitchy.min.js"></script>
+
+</body>
+</html>
