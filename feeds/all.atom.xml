@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OpenDataAlex's Blog</title><link href="https://www.opendataalex.com/" rel="alternate"></link><link href="https://www.opendataalex.com/feeds/all.atom.xml" rel="self"></link><id>https://www.opendataalex.com/</id><updated>2020-10-20T10:00:00-04:00</updated><entry><title>Introducing Tweakstreet</title><link href="https://www.opendataalex.com/introducing-tweakstreet.html" rel="alternate"></link><published>2020-10-20T10:00:00-04:00</published><updated>2020-10-20T10:00:00-04:00</updated><author><name>Alex Meadows</name></author><id>tag:www.opendataalex.com,2020-10-20:/introducing-tweakstreet.html</id><summary type="html">&lt;h1&gt;Introducing Tweakstreet&lt;/h1&gt;
-&lt;p&gt;If you've known me for any length of time, you know my love of and heavy use of open source.  Rarely though I'll
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OpenDataAlex's Blog</title><link href="https://www.opendataalex.com/" rel="alternate"></link><link href="https://www.opendataalex.com/feeds/all.atom.xml" rel="self"></link><id>https://www.opendataalex.com/</id><updated>2020-10-20T10:00:00-04:00</updated><entry><title>Introducing Tweakstreet</title><link href="https://www.opendataalex.com/introducing-tweakstreet.html" rel="alternate"></link><published>2020-10-20T10:00:00-04:00</published><updated>2020-10-20T10:00:00-04:00</updated><author><name>Alex Meadows</name></author><id>tag:www.opendataalex.com,2020-10-20:/introducing-tweakstreet.html</id><summary type="html">&lt;p&gt;If you've known me for any length of time, you know my love of and heavy use of open source.  Rarely though I'll
 find tools that aren't pure open source that are quite worthwhile to have in the toolbox.  For a long time, my main
-go-to data integration …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Introducing Tweakstreet&lt;/h1&gt;
-&lt;p&gt;If you've known me for any length of time, you know my love of and heavy use of open source.  Rarely though I'll
+go-to data integration tool has …&lt;/p&gt;</summary><content type="html">&lt;p&gt;If you've known me for any length of time, you know my love of and heavy use of open source.  Rarely though I'll
 find tools that aren't pure open source that are quite worthwhile to have in the toolbox.  For a long time, my main
 go-to data integration tool has been &lt;a href="https://help.pentaho.com/Documentation/9.0/Products/Pentaho_Data_Integration"&gt;Pentaho's Data Integration&lt;/a&gt; 
 (aka Kettle aka &lt;a href="https://incubator.apache.org/clutch/hop.html"&gt;Apache Hop&lt;/a&gt;).  Another long time member of the Kettle
@@ -14,7 +12,7 @@ tools including Kettle.  &lt;/p&gt;
 &lt;p&gt;I'll be adding some blog posts with some tips and tricks I've hit that may be helpful for others who want to start playing around with it.
 Go ahead and check it out - there's a &lt;a href="https://tweakstreet.io/download"&gt;unlimited trial&lt;/a&gt; going on now and if you do go
 for a license, they are quite reasonable.&lt;/p&gt;
-&lt;h1&gt;Open Source backing&lt;/h1&gt;
+&lt;h2&gt;Open Source backing&lt;/h2&gt;
 &lt;p&gt;Now another factor about Tweakstreet that I'll mention here is &lt;a href="https://twineworks.github.io/tweakflow/index.html"&gt;Tweakflow&lt;/a&gt;,
 an open source embeddable scripting language for JVM and used in Tweakstreet.  This can be used in other tools and is pretty
 powerful on its own.&lt;/p&gt;</content><category term="Tutorials"></category><category term="Tweakstreet"></category><category term="data integration"></category></entry><entry><title>A Sad Day For Open Source</title><link href="https://www.opendataalex.com/a-sad-day-for-open-source.html" rel="alternate"></link><published>2018-10-28T18:23:00-04:00</published><updated>2018-10-28T18:23:00-04:00</updated><author><name>Alex Meadows</name></author><id>tag:www.opendataalex.com,2018-10-28:/a-sad-day-for-open-source.html</id><summary type="html">&lt;p&gt;Today is a sad day for open source.  I found out only a couple of hours ago that Red Hat, like
